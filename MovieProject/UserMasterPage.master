@@ -1,0 +1,296 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMasterPage.master.cs" Inherits="UserMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title>Simple Blue - online movie application</title>
+<meta name="keywords" content="free css templates, free website templates, simple blue, light gray" />
+<meta name="description" content="Simple Blue is a free CSS template from www.templatemo.com" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.ennui.contentslider.css" rel="stylesheet" type="text/css" media="screen,projection" />
+<script language="javascript" type="text/javascript">
+function clearText(field)
+{
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="templatemo_site_title_bar_wrapper">
+	<div id="templatemo_site_title_bar">
+    	<div id="site_title">
+            <h1><a href="#">M-Blue<span>online movie application</span></a></h1>
+        </div>
+        
+        <ul id="templatemo_menu">
+            <li><a href="UserHome.aspx" class="current"><span></span>Home</a></li>
+            <li><a href="UserVideoView.aspx" ><span></span>Play</a></li>
+			<li><a href="."><span></span>Logout</a></li>
+            
+        </ul>
+        
+        <div id="search_box">
+            <form action="#" method="get">
+        <!--        <input type="text" value="Enter keyword here..." name="q" size="10" id="searchfield" title="searchfield" onfocus="clearText(this)" onblur="clearText(this)" />
+                <input id="Submit1" type="submit" value="Search" />
+           --> </form>
+       </div>
+       
+	</div> <!-- end of templatemo_site_title_bar -->        
+       
+</div> <!-- end of templatemo_site_title_bar_wrapper -->
+
+<div id="templatemo_banner_wrapper_outter">
+<div id="templatemo_banner_wrapper">
+	
+    <div id="templatemo_banner">
+    
+    <div id="templatemo_banner_slider">
+    <!-- start of the slider -->
+    
+    <div id="one" class="contentslider">
+            <div class="cs_wrapper">
+                <div class="cs_slider">
+                
+                    <div class="cs_article">
+                        <div class="cs_article_inner">
+                             <div class="img_frame"><img src="images/templatemo_image_04.jpg" alt="Image Title 1" /></div>
+                              <h2>Internet movie services</h2>
+                              <p>Internet movie services offer news, sports, talk, and various genres of music—every format that is available on traditional broadcast movie stations</p>
+                              <a href="#">More <span>&raquo;</span></a>
+                        </div>                               
+                    </div><!-- End cs_article -->
+                    
+                    <div class="cs_article">
+                        <div class="cs_article_inner">
+                            <div class="img_frame"><img src="images/templatemo_image_03.jpg" alt="Image Title 2" /></div>
+                            <h2>Internet movie services</h2>
+                            <p>Many Internet movie services are associated with a corresponding traditional (terrestrial) movie station or movie network, although low start-up and ongoing costs have allowed a substantial proliferation of independent Internet-only movie stations</p>
+                            <a href="#">More <span>&raquo;</span></a>
+                        
+                        </div>
+                    </div><!-- End cs_article -->
+                    
+                    <div class="cs_article">
+                        <div class="cs_article_inner">
+                        <div class="img_frame"><img src="images/templatemo_image_05.jpg" alt="Image Title 3" /></div>
+                        <h2>Internet movie technology</h2>
+                        <p>Internet movie services are usually accessible from anywhere in the world with a suitable internet connection available; one could, for example, listen to an Australian station from Europe and America. This has made internet movie particularly suited to and popular among expatriate listeners.</p>
+                        <a href="#">More <span>&raquo;</span></a>
+                        
+                        </div>
+                    </div><!-- End cs_article -->
+                    
+                    <div class="cs_article">
+                    <div class="cs_article_inner">
+                        <div class="img_frame"><img src="images/templatemo_image_06.jpg" alt="Image Title 4" /></div>
+                        <h2>Listening</h2>
+                        <p>Internet movie is typically listened to on a standard home PC or similar device, through an embedded player program located on the respective station's website. In recent years, dedicated devices that resemble and offer the listener a similar experience to a traditional movie receiver have arrived on the market</p>
+                        <a href="#">More <span>&raquo;</span></a>
+                    </div>
+                    </div><!-- End cs_article -->
+              
+                </div><!-- End cs_slider -->
+            </div><!-- End cs_wrapper -->
+        </div><!-- End contentslider -->
+        
+        <!-- Site JavaScript -->
+        <script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.ennui.contentslider.js"></script>
+        <script type="text/javascript">
+            $(function() {
+            $('#one').ContentSlider({
+            width : '960px',
+            height : '250px',
+          	speed : 400,
+            easing : 'easeOutSine'
+            });
+            });
+        </script>
+        <script src="js/jquery.chili-2.2.js" type="text/javascript"></script>
+        <script src="js/chili/recipes.js" type="text/javascript"></script>
+        <div class="cleaner"></div>
+  
+  		<!-- end of the slider -->  
+  
+    
+   	  </div> <!-- end of templatemo_popular_posts -->
+    
+    </div> <!-- end of templatemo_banner -->
+
+</div> <!-- end of templatemo_banner_wrapper -->
+</div> <!-- end of templatemo_banner_wrapper_outter -->
+
+<div id="templatemo_content">
+	
+    <div id="twitter_section">
+   
+    
+    <div class="section_w940">
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+           
+        
+            <table class="auto-style1">
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
+                            <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                            <EditRowStyle BackColor="#999999" />
+                            <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                            <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                            <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                            <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+                            <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                            <SortedAscendingCellStyle BackColor="#E9E7E2" />
+                            <SortedAscendingHeaderStyle BackColor="#506C8C" />
+                            <SortedDescendingCellStyle BackColor="#FFFDF8" />
+                            <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
+                        </asp:GridView>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+        
+           
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    </div>
+    
+    <div class="cleaner_h60"></div>
+    
+    <div class="section_w940">
+    
+    	<div class="section_w450 margin_r_40">
+        
+          <div class="button_01"></div>
+            
+            
+            <div class="cleaner"></div>
+            
+            <a href="http://www.templatemo.com" target="_blank">www.movie.com</a>
+            
+        </div>
+        
+        <div class="section_w450">
+        	
+        </div>
+    
+    	<div class="cleaner"></div>
+    </div>
+    
+    
+    <div class="cleaner"></div>
+</div> <!-- end of templatemo_content -->
+ 
+
+<div id="templatemo_footer_wrapper">
+<div id="templatemo_footer">
+
+    <div class="section_w240">
+        
+        <h3>Privacy Policy</h3>
+        
+        <div class="sub_content">
+            <p>As Internet-movie listening rose among the 13-to-35 age group, listening to AM/FM 
+                movie, which now accounts for 24 percent of music-listening time, declined 2 
+                percentage</p>
+        </div>
+        
+    </div>
+
+    <div class="section_w240">
+        
+        <h3>Partners</h3>
+        
+        <div class="sub_content">
+            
+            <ul class="footer_list">
+                <li><a href="http://www.templatemo.com/page/1" target="_parent">Free CSS Templates</a></li>
+                <li><a href="http://www.flashmo.com/page/1" target="_parent">Free Flash Templates</a></li>
+                <li><a href="http://www.flashmo.com/store" target="_parent">Template Store</a></li>
+                <li><a href="http://www.webdesignmo.com/blog" target="_parent">Web Design Tips</a></li>
+                <li><a href="http://www.koflash.com" target="_parent">Best Flash Gallery</a></li>               
+            </ul>
+            
+        </div>
+        
+    </div>
+    
+    <div class="section_w240">
+        
+        <h3>About</h3>
+        
+        <div class="sub_content">
+        
+            <ul class="footer_list">
+                <li><a href="#">Lorem ipsum dolor</a></li>
+                <li><a href="#">Cum sociis</a></li>
+                <li><a href="#">Donec quam</a></li>
+                <li><a href="#">Nulla consequat</a></li>
+                <li><a href="#">In enim justo</a></li>
+            </ul>
+        
+        </div>
+        
+    </div>
+    
+    <div class="section_w240">
+        
+        <h3>XHTML/CSS validations</h3>
+        
+        <div class="sub_content">
+        	
+            <p>Aliquam vehicula accumsan arcu, vestibulum cursus purus lobortis eu. Pellentesque vitae neque non lorem vehicula adipiscing. </p>
+            
+            <div class="cleaner_h20"></div>
+        
+            <a href="http://validator.w3.org/check?uri=referer"><img style="border:0;width:88px;height:31px" src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" width="88" height="31" vspace="8" border="0" /></a>
+            
+            <a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px"  src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" vspace="8" border="0" /></a>
+            
+        </div>
+            
+    </div>
+    
+    <div class="cleaner_h40"></div>
+    
+    
+    <center>
+        Copyright © 2018 <a href="#">M Movie</a> | 
+        <a href="http://www.iwebsitetemplate.com" target="_parent"> <a href="http://www.templatemo.com" target="_parent"> </a>
+    </center>
+    
+
+</div> <!-- end of footer -->
+</div> <!-- end of footer wrapper -->
+
+<div align=center>2018 @ movie</a></div>
+</body>
+</html>
